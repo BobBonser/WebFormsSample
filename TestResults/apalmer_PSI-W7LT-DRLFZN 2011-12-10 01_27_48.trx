@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ae8c772a-559a-4a96-a6ca-07a1f3de4983" name="apalmer@PSI-W7LT-DRLFZN 2011-12-10 01:27:48" runUser="PRELUDE\apalmer" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="1b052522-8a83-4dd0-95c4-88e88fda6056">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="apalmer_PSI-W7LT-DRLFZN 2011-12-10 01_27_48">
+      <DeploymentItem filename="C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\lib\EntityFramework.dll" />
+      <DeploymentItem filename="C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\src\Prelude.WebFormsSample.Core\bin\Debug\Prelude.WebFormsSample.Core.dll" />
+      <DeploymentItem filename="C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\src\Prelude.WebFormsSample.Web\bin\Prelude.WebFormsSample.Web.dll" />
+      <DeploymentItem filename="C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\src\Prelude.WebFormsSample.Data\bin\Debug\Prelude.WebFormsSample.Data.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-12-10T01:27:48.7609773-05:00" queuing="2011-12-10T01:27:50.7830930-05:00" start="2011-12-10T01:27:51.1721152-05:00" finish="2011-12-10T01:28:54.6877481-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="PSI-W7LT-DRLFZN" outcome="Error" timestamp="2011-12-10T01:28:54.6867481-05:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Demo_Insert_NewEntity" storage="c:\users\apalmer\documents\visual studio 2010\projects\prelude.webformssample\src\prelude.webformssample.tests\bin\debug\prelude.webformssample.tests.dll" id="c10f0587-9ea3-0944-95c4-3acac2758718">
+      <Execution id="7851db4a-c18e-43ec-a9ed-64a221420cfb" />
+      <TestMethod codeBase="C:/Users/apalmer/Documents/Visual Studio 2010/Projects/Prelude.WebFormsSample/src/Prelude.WebFormsSample.Tests/bin/Debug/Prelude.WebFormsSample.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Prelude.WebFormsSample.Tests.SampleDbTests, Prelude.WebFormsSample.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Demo_Insert_NewEntity" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c10f0587-9ea3-0944-95c4-3acac2758718" executionId="7851db4a-c18e-43ec-a9ed-64a221420cfb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="7851db4a-c18e-43ec-a9ed-64a221420cfb" testId="c10f0587-9ea3-0944-95c4-3acac2758718" testName="Demo_Insert_NewEntity" computerName="PSI-W7LT-DRLFZN" duration="00:01:03.2226161" startTime="2011-12-10T01:27:51.4651320-05:00" endTime="2011-12-10T01:28:54.6877481-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7851db4a-c18e-43ec-a9ed-64a221420cfb">
+    </UnitTestResult>
+  </Results>
+</TestRun>

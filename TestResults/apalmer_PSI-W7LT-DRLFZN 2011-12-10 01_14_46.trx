@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="68690acc-dfd9-4003-a94c-e48b52752429" name="apalmer@PSI-W7LT-DRLFZN 2011-12-10 01:14:46" runUser="PRELUDE\apalmer" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="1b052522-8a83-4dd0-95c4-88e88fda6056">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="apalmer_PSI-W7LT-DRLFZN 2011-12-10 01_14_46">
+      <DeploymentItem filename="C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\lib\EntityFramework.dll" />
+      <DeploymentItem filename="C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\src\Prelude.WebFormsSample.Core\bin\Debug\Prelude.WebFormsSample.Core.dll" />
+      <DeploymentItem filename="C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\src\Prelude.WebFormsSample.Web\bin\Prelude.WebFormsSample.Web.dll" />
+      <DeploymentItem filename="C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\src\Prelude.WebFormsSample.Data\bin\Debug\Prelude.WebFormsSample.Data.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-12-10T01:14:46.1062120-05:00" queuing="2011-12-10T01:14:47.5432942-05:00" start="2011-12-10T01:14:47.6312993-05:00" finish="2011-12-10T01:16:25.2548830-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="3" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Prove_TryGetObjectByKey_HitsContextFirst" storage="c:\users\apalmer\documents\visual studio 2010\projects\prelude.webformssample\src\prelude.webformssample.tests\bin\debug\prelude.webformssample.tests.dll" id="70d55418-e9c5-f165-a57d-b03fc7277026">
+      <Execution id="e6644054-503f-4352-8a04-2f023ea779d9" />
+      <TestMethod codeBase="C:/Users/apalmer/Documents/Visual Studio 2010/Projects/Prelude.WebFormsSample/src/Prelude.WebFormsSample.Tests/bin/Debug/Prelude.WebFormsSample.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Prelude.WebFormsSample.Tests.SampleDbTests, Prelude.WebFormsSample.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Prove_TryGetObjectByKey_HitsContextFirst" />
+    </UnitTest>
+    <UnitTest name="Prove_ObjectQuery_AlwaysHitsDb" storage="c:\users\apalmer\documents\visual studio 2010\projects\prelude.webformssample\src\prelude.webformssample.tests\bin\debug\prelude.webformssample.tests.dll" id="411e7457-7320-c0eb-6d70-d964c024eaf9">
+      <Execution id="9edfb22c-74ac-4757-a7ac-02d7b44499da" />
+      <TestMethod codeBase="C:/Users/apalmer/Documents/Visual Studio 2010/Projects/Prelude.WebFormsSample/src/Prelude.WebFormsSample.Tests/bin/Debug/Prelude.WebFormsSample.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Prelude.WebFormsSample.Tests.SampleDbTests, Prelude.WebFormsSample.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Prove_ObjectQuery_AlwaysHitsDb" />
+    </UnitTest>
+    <UnitTest name="Demo_Update_ExistingEntity" storage="c:\users\apalmer\documents\visual studio 2010\projects\prelude.webformssample\src\prelude.webformssample.tests\bin\debug\prelude.webformssample.tests.dll" id="97548af4-a671-3b0b-8ff3-632e28f08d89">
+      <Execution id="a52591f3-7d5e-48cd-b843-40e7d9b3f585" />
+      <TestMethod codeBase="C:/Users/apalmer/Documents/Visual Studio 2010/Projects/Prelude.WebFormsSample/src/Prelude.WebFormsSample.Tests/bin/Debug/Prelude.WebFormsSample.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Prelude.WebFormsSample.Tests.SampleDbTests, Prelude.WebFormsSample.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Demo_Update_ExistingEntity" />
+    </UnitTest>
+    <UnitTest name="Demo_Insert_NewEntity" storage="c:\users\apalmer\documents\visual studio 2010\projects\prelude.webformssample\src\prelude.webformssample.tests\bin\debug\prelude.webformssample.tests.dll" id="c10f0587-9ea3-0944-95c4-3acac2758718">
+      <Execution id="49a55dfe-e995-4c35-9752-46858da04212" />
+      <TestMethod codeBase="C:/Users/apalmer/Documents/Visual Studio 2010/Projects/Prelude.WebFormsSample/src/Prelude.WebFormsSample.Tests/bin/Debug/Prelude.WebFormsSample.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Prelude.WebFormsSample.Tests.SampleDbTests, Prelude.WebFormsSample.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Demo_Insert_NewEntity" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="411e7457-7320-c0eb-6d70-d964c024eaf9" executionId="9edfb22c-74ac-4757-a7ac-02d7b44499da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="70d55418-e9c5-f165-a57d-b03fc7277026" executionId="e6644054-503f-4352-8a04-2f023ea779d9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="97548af4-a671-3b0b-8ff3-632e28f08d89" executionId="a52591f3-7d5e-48cd-b843-40e7d9b3f585" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c10f0587-9ea3-0944-95c4-3acac2758718" executionId="49a55dfe-e995-4c35-9752-46858da04212" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9edfb22c-74ac-4757-a7ac-02d7b44499da" testId="411e7457-7320-c0eb-6d70-d964c024eaf9" testName="Prove_ObjectQuery_AlwaysHitsDb" computerName="PSI-W7LT-DRLFZN" duration="00:00:00.7566137" startTime="2011-12-10T01:14:47.6873025-05:00" endTime="2011-12-10T01:14:49.9024292-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9edfb22c-74ac-4757-a7ac-02d7b44499da">
+    </UnitTestResult>
+    <UnitTestResult executionId="e6644054-503f-4352-8a04-2f023ea779d9" testId="70d55418-e9c5-f165-a57d-b03fc7277026" testName="Prove_TryGetObjectByKey_HitsContextFirst" computerName="PSI-W7LT-DRLFZN" duration="00:00:00.0014210" startTime="2011-12-10T01:14:49.9154299-05:00" endTime="2011-12-10T01:14:49.9234304-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e6644054-503f-4352-8a04-2f023ea779d9">
+    </UnitTestResult>
+    <UnitTestResult executionId="a52591f3-7d5e-48cd-b843-40e7d9b3f585" testId="97548af4-a671-3b0b-8ff3-632e28f08d89" testName="Demo_Update_ExistingEntity" computerName="PSI-W7LT-DRLFZN" duration="00:00:00.1852336" startTime="2011-12-10T01:14:49.9354311-05:00" endTime="2011-12-10T01:14:50.1284421-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a52591f3-7d5e-48cd-b843-40e7d9b3f585">
+      <Output>
+        <DebugTrace>Unchanged
+Modified
+Modified
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="49a55dfe-e995-4c35-9752-46858da04212" testId="c10f0587-9ea3-0944-95c4-3acac2758718" testName="Demo_Insert_NewEntity" computerName="PSI-W7LT-DRLFZN" duration="00:01:33.4191003" startTime="2011-12-10T01:14:50.1394427-05:00" endTime="2011-12-10T01:16:23.5697866-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="49a55dfe-e995-4c35-9752-46858da04212">
+      <Output>
+        <DebugTrace>Detached
+Added
+Added
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method Prelude.WebFormsSample.Tests.SampleDbTests.Demo_Insert_NewEntity threw exception: 
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---&gt; System.Data.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---&gt; System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'Person.Address' with unique index 'IX_Address_AddressLine1_AddressLine2_City_StateProvinceID_PostalCode'. The duplicate key value is (line1, &lt;NULL&gt;, City, 5, 12345).
+The statement has been terminated.</Message>
+          <StackTrace>    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Mapping.Update.Internal.DynamicUpdateCommand.Execute(UpdateTranslator translator, EntityConnection connection, Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+ --- End of inner exception stack trace ---
+    at System.Data.Mapping.Update.Internal.UpdateTranslator.Update(IEntityStateManager stateManager, IEntityAdapter adapter)
+   at System.Data.EntityClient.EntityAdapter.Update(IEntityStateManager entityCache)
+   at System.Data.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+ --- End of inner exception stack trace ---
+    at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at Prelude.WebFormsSample.Tests.SampleDbTests.Demo_Insert_NewEntity() in C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\src\Prelude.WebFormsSample.Tests\SampleDbTests.vb:line 123
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

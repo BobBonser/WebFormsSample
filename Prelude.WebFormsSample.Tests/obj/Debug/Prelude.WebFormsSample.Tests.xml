@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Prelude.WebFormsSample.Tests
+</name>
+</assembly>
+<members>
+<member name="P:Prelude.WebFormsSample.Tests.SampleDbTests.TestContext">
+	<summary>
+Gets or sets the test context which provides
+information about and functionality for the current test run.
+</summary>
+</member>
+</members>
+</doc>

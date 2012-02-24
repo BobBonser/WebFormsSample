@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3bb25605-ce0e-4dc6-84ba-4dbb2c77674a" name="apalmer@PSI-W7LT-DRLFZN 2011-12-10 01:08:48" runUser="PRELUDE\apalmer" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="1b052522-8a83-4dd0-95c4-88e88fda6056">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="apalmer_PSI-W7LT-DRLFZN 2011-12-10 01_08_48">
+      <DeploymentItem filename="C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\lib\EntityFramework.dll" />
+      <DeploymentItem filename="C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\src\Prelude.WebFormsSample.Core\bin\Debug\Prelude.WebFormsSample.Core.dll" />
+      <DeploymentItem filename="C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\src\Prelude.WebFormsSample.Web\bin\Prelude.WebFormsSample.Web.dll" />
+      <DeploymentItem filename="C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\src\Prelude.WebFormsSample.Data\bin\Debug\Prelude.WebFormsSample.Data.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-12-10T01:08:48.6207650-05:00" queuing="2011-12-10T01:08:49.9148391-05:00" start="2011-12-10T01:08:50.0018440-05:00" finish="2011-12-10T01:09:18.5644777-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Prove_TryGetObjectByKey_HitsContextFirst" storage="c:\users\apalmer\documents\visual studio 2010\projects\prelude.webformssample\src\prelude.webformssample.tests\bin\debug\prelude.webformssample.tests.dll" id="70d55418-e9c5-f165-a57d-b03fc7277026">
+      <Execution id="66110353-9feb-4b20-a3f1-dd4366e8c6d5" />
+      <TestMethod codeBase="C:/Users/apalmer/Documents/Visual Studio 2010/Projects/Prelude.WebFormsSample/src/Prelude.WebFormsSample.Tests/bin/Debug/Prelude.WebFormsSample.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Prelude.WebFormsSample.Tests.SampleDbTests, Prelude.WebFormsSample.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Prove_TryGetObjectByKey_HitsContextFirst" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="70d55418-e9c5-f165-a57d-b03fc7277026" executionId="66110353-9feb-4b20-a3f1-dd4366e8c6d5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="66110353-9feb-4b20-a3f1-dd4366e8c6d5" testId="70d55418-e9c5-f165-a57d-b03fc7277026" testName="Prove_TryGetObjectByKey_HitsContextFirst" computerName="PSI-W7LT-DRLFZN" duration="00:00:26.8701371" startTime="2011-12-10T01:08:50.0638476-05:00" endTime="2011-12-10T01:09:18.4494712-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66110353-9feb-4b20-a3f1-dd4366e8c6d5">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Prelude.WebFormsSample.Tests.SampleDbTests.Prove_TryGetObjectByKey_HitsContextFirst threw exception: 
+System.Data.MetadataException: Schema specified is not valid. Errors: 
+PersonSection.PersonModel.csdl(4,6) : error 0034: Unknown namespace or alias (PersonEntities).
+PersonSection.PersonModel.csdl(56,6) : error 0034: Unknown namespace or alias (PersonEntities).</Message>
+          <StackTrace>    at System.Data.Metadata.Edm.EdmItemCollection.LoadItems(IEnumerable`1 xmlReaders, IEnumerable`1 sourceFilePaths, SchemaDataModelOption dataModelOption, DbProviderManifest providerManifest, ItemCollection itemCollection, Boolean throwOnError)
+   at System.Data.Metadata.Edm.EdmItemCollection.Init(IEnumerable`1 xmlReaders, IEnumerable`1 filePaths, Boolean throwOnError)
+   at System.Data.Metadata.Edm.EdmItemCollection..ctor(IEnumerable`1 xmlReaders, IEnumerable`1 filePaths)
+   at System.Data.Metadata.Edm.MetadataCache.EdmMetadataEntry.LoadEdmItemCollection(MetadataArtifactLoader loader)
+   at System.Data.Metadata.Edm.MetadataCache.EdmItemCollectionLoader.LoadItemCollection(EdmMetadataEntry entry)
+   at System.Data.Metadata.Edm.MetadataCache.LoadItemCollection[T](IItemCollectionLoader`1 itemCollectionLoader, T entry)
+   at System.Data.Metadata.Edm.MetadataCache.GetOrCreateEdmItemCollection(String cacheKey, MetadataArtifactLoader loader, Object&amp; entryToken)
+   at System.Data.EntityClient.EntityConnection.LoadEdmItemCollection(MetadataWorkspace workspace, MetadataArtifactLoader artifactLoader)
+   at System.Data.EntityClient.EntityConnection.GetMetadataWorkspace(Boolean initializeAllCollections)
+   at System.Data.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor)
+   at System.Data.Objects.ObjectContext..ctor(EntityConnection connection)
+   at System.Data.Entity.Internal.InternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   at Prelude.WebFormsSample.Tests.SampleDbTests.Prove_TryGetObjectByKey_HitsContextFirst() in C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\src\Prelude.WebFormsSample.Tests\SampleDbTests.vb:line 67
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

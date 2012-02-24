@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="17001096-a29a-4c8e-b6e1-5284b8cf23e9" name="apalmer@PSI-W7LT-DRLFZN 2011-12-10 01:13:37" runUser="PRELUDE\apalmer" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="1b052522-8a83-4dd0-95c4-88e88fda6056">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="apalmer_PSI-W7LT-DRLFZN 2011-12-10 01_13_37">
+      <DeploymentItem filename="C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\lib\EntityFramework.dll" />
+      <DeploymentItem filename="C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\src\Prelude.WebFormsSample.Core\bin\Debug\Prelude.WebFormsSample.Core.dll" />
+      <DeploymentItem filename="C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\src\Prelude.WebFormsSample.Web\bin\Prelude.WebFormsSample.Web.dll" />
+      <DeploymentItem filename="C:\Users\apalmer\Documents\Visual Studio 2010\Projects\Prelude.WebFormsSample\src\Prelude.WebFormsSample.Data\bin\Debug\Prelude.WebFormsSample.Data.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-12-10T01:13:37.4682862-05:00" queuing="2011-12-10T01:13:38.9463707-05:00" start="2011-12-10T01:13:39.0293755-05:00" finish="2011-12-10T01:14:18.7276461-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="4" executed="4" passed="3" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="PSI-W7LT-DRLFZN" outcome="Error" timestamp="2011-12-10T01:14:18.7266460-05:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Prove_TryGetObjectByKey_HitsContextFirst" storage="c:\users\apalmer\documents\visual studio 2010\projects\prelude.webformssample\src\prelude.webformssample.tests\bin\debug\prelude.webformssample.tests.dll" id="70d55418-e9c5-f165-a57d-b03fc7277026">
+      <Execution id="7eb41691-f781-4cda-b3d4-cff9b3d2f6ae" />
+      <TestMethod codeBase="C:/Users/apalmer/Documents/Visual Studio 2010/Projects/Prelude.WebFormsSample/src/Prelude.WebFormsSample.Tests/bin/Debug/Prelude.WebFormsSample.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Prelude.WebFormsSample.Tests.SampleDbTests, Prelude.WebFormsSample.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Prove_TryGetObjectByKey_HitsContextFirst" />
+    </UnitTest>
+    <UnitTest name="Prove_ObjectQuery_AlwaysHitsDb" storage="c:\users\apalmer\documents\visual studio 2010\projects\prelude.webformssample\src\prelude.webformssample.tests\bin\debug\prelude.webformssample.tests.dll" id="411e7457-7320-c0eb-6d70-d964c024eaf9">
+      <Execution id="71e19c4c-f6fc-4514-a79c-3e1fd1b2eba7" />
+      <TestMethod codeBase="C:/Users/apalmer/Documents/Visual Studio 2010/Projects/Prelude.WebFormsSample/src/Prelude.WebFormsSample.Tests/bin/Debug/Prelude.WebFormsSample.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Prelude.WebFormsSample.Tests.SampleDbTests, Prelude.WebFormsSample.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Prove_ObjectQuery_AlwaysHitsDb" />
+    </UnitTest>
+    <UnitTest name="Demo_Update_ExistingEntity" storage="c:\users\apalmer\documents\visual studio 2010\projects\prelude.webformssample\src\prelude.webformssample.tests\bin\debug\prelude.webformssample.tests.dll" id="97548af4-a671-3b0b-8ff3-632e28f08d89">
+      <Execution id="2853d77b-7b1f-4176-920f-eef27fc6afee" />
+      <TestMethod codeBase="C:/Users/apalmer/Documents/Visual Studio 2010/Projects/Prelude.WebFormsSample/src/Prelude.WebFormsSample.Tests/bin/Debug/Prelude.WebFormsSample.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Prelude.WebFormsSample.Tests.SampleDbTests, Prelude.WebFormsSample.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Demo_Update_ExistingEntity" />
+    </UnitTest>
+    <UnitTest name="Demo_Insert_NewEntity" storage="c:\users\apalmer\documents\visual studio 2010\projects\prelude.webformssample\src\prelude.webformssample.tests\bin\debug\prelude.webformssample.tests.dll" id="c10f0587-9ea3-0944-95c4-3acac2758718">
+      <Execution id="9b44c094-0307-40d5-9e31-78dffcff559f" />
+      <TestMethod codeBase="C:/Users/apalmer/Documents/Visual Studio 2010/Projects/Prelude.WebFormsSample/src/Prelude.WebFormsSample.Tests/bin/Debug/Prelude.WebFormsSample.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Prelude.WebFormsSample.Tests.SampleDbTests, Prelude.WebFormsSample.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Demo_Insert_NewEntity" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="411e7457-7320-c0eb-6d70-d964c024eaf9" executionId="71e19c4c-f6fc-4514-a79c-3e1fd1b2eba7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="70d55418-e9c5-f165-a57d-b03fc7277026" executionId="7eb41691-f781-4cda-b3d4-cff9b3d2f6ae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="97548af4-a671-3b0b-8ff3-632e28f08d89" executionId="2853d77b-7b1f-4176-920f-eef27fc6afee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c10f0587-9ea3-0944-95c4-3acac2758718" executionId="9b44c094-0307-40d5-9e31-78dffcff559f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="71e19c4c-f6fc-4514-a79c-3e1fd1b2eba7" testId="411e7457-7320-c0eb-6d70-d964c024eaf9" testName="Prove_ObjectQuery_AlwaysHitsDb" computerName="PSI-W7LT-DRLFZN" duration="00:00:00.7710790" startTime="2011-12-10T01:13:39.0843786-05:00" endTime="2011-12-10T01:13:41.3645090-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="71e19c4c-f6fc-4514-a79c-3e1fd1b2eba7">
+    </UnitTestResult>
+    <UnitTestResult executionId="7eb41691-f781-4cda-b3d4-cff9b3d2f6ae" testId="70d55418-e9c5-f165-a57d-b03fc7277026" testName="Prove_TryGetObjectByKey_HitsContextFirst" computerName="PSI-W7LT-DRLFZN" duration="00:00:00.0012767" startTime="2011-12-10T01:13:41.3785098-05:00" endTime="2011-12-10T01:13:41.3855102-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7eb41691-f781-4cda-b3d4-cff9b3d2f6ae">
+    </UnitTestResult>
+    <UnitTestResult executionId="2853d77b-7b1f-4176-920f-eef27fc6afee" testId="97548af4-a671-3b0b-8ff3-632e28f08d89" testName="Demo_Update_ExistingEntity" computerName="PSI-W7LT-DRLFZN" duration="00:00:00.1808068" startTime="2011-12-10T01:13:41.3975109-05:00" endTime="2011-12-10T01:13:41.5845216-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2853d77b-7b1f-4176-920f-eef27fc6afee">
+      <Output>
+        <DebugTrace>Unchanged
+Modified
+Modified
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9b44c094-0307-40d5-9e31-78dffcff559f" testId="c10f0587-9ea3-0944-95c4-3acac2758718" testName="Demo_Insert_NewEntity" computerName="PSI-W7LT-DRLFZN" duration="00:00:37.1311238" startTime="2011-12-10T01:13:41.5965223-05:00" endTime="2011-12-10T01:14:18.7276461-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9b44c094-0307-40d5-9e31-78dffcff559f">
+    </UnitTestResult>
+  </Results>
+</TestRun>

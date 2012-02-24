@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PersonModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="PersonEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Address" EntityType="PersonModel.Address" />
+    <EntitySet Name="CountryRegion" EntityType="PersonModel.CountryRegion" />
+    <EntitySet Name="StateProvince" EntityType="PersonModel.StateProvince" />
+    <AssociationSet Name="FK_Address_StateProvince_StateProvinceID" Association="PersonModel.FK_Address_StateProvince_StateProvinceID">
+      <End Role="StateProvince" EntitySet="StateProvince" />
+      <End Role="Address" EntitySet="Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StateProvince_CountryRegion_CountryRegionCode" Association="PersonModel.FK_StateProvince_CountryRegion_CountryRegionCode">
+      <End Role="CountryRegion" EntitySet="CountryRegion" />
+      <End Role="StateProvince" EntitySet="StateProvince" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Type="Int32" Name="AddressID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AddressLine2" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="StateProvinceID" Nullable="false" />
+    <Property Type="String" Name="PostalCode" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="rowguid" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="StateProvince" Relationship="PersonModel.FK_Address_StateProvince_StateProvinceID" FromRole="Address" ToRole="StateProvince" />
+  </EntityType>
+  <EntityType Name="CountryRegion">
+    <Key>
+      <PropertyRef Name="CountryRegionCode" />
+    </Key>
+    <Property Type="String" Name="CountryRegionCode" Nullable="false" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="StateProvince" Relationship="PersonModel.FK_StateProvince_CountryRegion_CountryRegionCode" FromRole="CountryRegion" ToRole="StateProvince" />
+  </EntityType>
+  <EntityType Name="StateProvince">
+    <Key>
+      <PropertyRef Name="StateProvinceID" />
+    </Key>
+    <Property Type="Int32" Name="StateProvinceID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="StateProvinceCode" Nullable="false" MaxLength="3" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="CountryRegionCode" Nullable="false" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsOnlyStateProvinceFlag" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="TerritoryID" Nullable="false" />
+    <Property Type="Guid" Name="rowguid" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Address" Relationship="PersonModel.FK_Address_StateProvince_StateProvinceID" FromRole="StateProvince" ToRole="Address" />
+    <NavigationProperty Name="CountryRegion" Relationship="PersonModel.FK_StateProvince_CountryRegion_CountryRegionCode" FromRole="StateProvince" ToRole="CountryRegion" />
+  </EntityType>
+  <Association Name="FK_Address_StateProvince_StateProvinceID">
+    <End Type="PersonModel.StateProvince" Role="StateProvince" Multiplicity="1" />
+    <End Type="PersonModel.Address" Role="Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StateProvince">
+        <PropertyRef Name="StateProvinceID" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="StateProvinceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StateProvince_CountryRegion_CountryRegionCode">
+    <End Type="PersonModel.CountryRegion" Role="CountryRegion" Multiplicity="1" />
+    <End Type="PersonModel.StateProvince" Role="StateProvince" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CountryRegion">
+        <PropertyRef Name="CountryRegionCode" />
+      </Principal>
+      <Dependent Role="StateProvince">
+        <PropertyRef Name="CountryRegionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
