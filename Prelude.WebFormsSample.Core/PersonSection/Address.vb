@@ -9,10 +9,13 @@
 
 Imports System
 Imports System.Collections.Generic
+Imports Prelude.WebFormsSample.Core.Interfaces
 
 Namespace PersonSection
 
     Partial Public Class Address
+        Implements IEntity(Of Integer)
+
         Public Property AddressID As Integer
         Public Property AddressLine1 As String
         Public Property AddressLine2 As String
@@ -21,9 +24,20 @@ Namespace PersonSection
         Public Property PostalCode As String
         Public Property rowguid As System.Guid
         Public Property ModifiedDate As Date
-    
+
         Public Overridable Property StateProvince As StateProvince
-    
+
+        Public ReadOnly Property ID As Integer Implements Interfaces.IEntity(Of Integer).ID
+            Get
+                Return AddressID
+            End Get
+        End Property
+
+        Public Function IDEquals(other As Integer) As Boolean Implements System.IEquatable(Of Integer).Equals
+
+            Return ID.Equals(other)
+
+        End Function
     End Class
 
 End Namespace

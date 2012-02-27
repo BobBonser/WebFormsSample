@@ -74,7 +74,8 @@
   <ItemGroup>
     <Compile Include="Interfaces\IAddressRepository.vb" />
     <Compile Include="Interfaces\IPersonRepository.vb" />
-    <Compile Include="Interfaces\ITest.vb" />
+    <Compile Include="Interfaces\IEntity.vb" />
+    <Compile Include="Interfaces\IRepository.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

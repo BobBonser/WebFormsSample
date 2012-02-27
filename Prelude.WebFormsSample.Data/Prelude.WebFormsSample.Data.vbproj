@@ -101,7 +101,7 @@
     </Compile>
     <Compile Include="Repositories\PersonRepository.vb" />
     <Compile Include="Repositories\AddressRepository.vb" />
-    <Compile Include="Repositories\TestRepository.vb" />
+    <Compile Include="Repositories\Repository.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
