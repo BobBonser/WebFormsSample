@@ -10,14 +10,22 @@
 Imports System
 Imports System.Collections.Generic
 
+Imports Prelude.WebFormsSample.Core.Interfaces
+
 Namespace PersonSection
 
     Partial Public Class CountryRegion
+    	Implements IEntity
         Public Property CountryRegionCode As String
         Public Property Name As String
         Public Property ModifiedDate As Date
     
         Public Overridable Property StateProvince As ICollection(Of StateProvince) = New HashSet(Of StateProvince)
+            Public ReadOnly Property ID As Object Implements Interfaces.IEntity.ID
+                Get
+                    Return CountryRegionCode
+                End Get
+            End Property
     
     End Class
 

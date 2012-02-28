@@ -31,10 +31,13 @@ For Each loopEntity As EntityType In ItemCollection.GetItems(Of EntityType)().Or
     fileManager.StartNewFile(entity.Name & ".vb")
 #>
 
+Imports Prelude.WebFormsSample.Core.Interfaces
+
 <#
     BeginNamespace(namespaceName, code)
 #>
 Partial <#=Accessibility.ForType(entity)#> <#=code.SpaceAfter(code.MustInheritOption(entity))#>Class <#=code.Escape(entity)#><#=code.StringBefore(Environment.NewLine & CodeRegion.GetIndent(region.CurrentIndentLevel + 2) & " Inherits ", code.Escape(entity.BaseType))#>
+	Implements IEntity
 <#
     Dim primitiveProperties as IEnumerable(Of EdmProperty) = entity.Properties.Where(Function(p) TypeOf p.TypeUsage.EdmType Is PrimitiveType AndAlso p.DeclaringType Is entity)
     If primitiveProperties.Any() Then
@@ -64,6 +67,13 @@ Partial <#=Accessibility.ForType(entity)#> <#=code.SpaceAfter(code.MustInheritOp
     End If
 
 #>
+<#If primitiveProperties.Any() Then#>
+        Public ReadOnly Property ID As Object Implements Interfaces.IEntity.ID
+            Get
+                Return <#=code.Escape(primitiveProperties(0))#>
+            End Get
+        End Property
+<#End If#>
 
 End Class
 <#
