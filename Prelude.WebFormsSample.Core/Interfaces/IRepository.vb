@@ -3,7 +3,7 @@
     Public Interface IRepository(Of T As Class)
 
         Function GetAll() As List(Of T)
-        Function GetByID(Of U)(ByVal id As U) As T
+        Function GetByID(ByVal id As Object) As T
 
     End Interface
 End Namespace

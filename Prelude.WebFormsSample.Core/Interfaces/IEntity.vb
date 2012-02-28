@@ -1,9 +1,8 @@
 ﻿Namespace Interfaces
 
-    Public Interface IEntity(Of T)
-        Inherits IEquatable(Of T)
+    Public Interface IEntity
 
-        ReadOnly Property ID As T
+        ReadOnly Property ID As Object
 
     End Interface
 End Namespace

@@ -5,19 +5,15 @@ Imports System.Data.Entity.Infrastructure
 Namespace Repositories
 
     Public Class AddressRepository
+        Inherits Repository(Of Address)
         Implements IAddressRepository
 
         Private ReadOnly ctx As IPersonEntities
 
         Public Sub New(context As Func(Of IPersonEntities))
-            ctx = context()
+            MyBase.New(context)
+            Me.ctx = context()
         End Sub
-
-        Public Function GetAddressByID(id As Integer) As Address Implements IAddressRepository.GetAddressByID
-
-            Return ctx.Address.Where(Function(addr) addr.AddressID = id).SingleOrDefault()
-
-        End Function
 
         Public Function GettAddressFromContext(id As Integer) As Address Implements IAddressRepository.GettAddressFromContext
 

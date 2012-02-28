@@ -14,7 +14,7 @@ Imports Prelude.WebFormsSample.Core.Interfaces
 Namespace PersonSection
 
     Partial Public Class Address
-        Implements IEntity(Of Integer)
+        Implements IEntity
 
         Public Property AddressID As Integer
         Public Property AddressLine1 As String
@@ -27,17 +27,12 @@ Namespace PersonSection
 
         Public Overridable Property StateProvince As StateProvince
 
-        Public ReadOnly Property ID As Integer Implements Interfaces.IEntity(Of Integer).ID
+        Public ReadOnly Property ID As Object Implements Interfaces.IEntity.ID
             Get
                 Return AddressID
             End Get
         End Property
 
-        Public Function IDEquals(other As Integer) As Boolean Implements System.IEquatable(Of Integer).Equals
-
-            Return ID.Equals(other)
-
-        End Function
     End Class
 
 End Namespace

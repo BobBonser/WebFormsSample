@@ -2,8 +2,8 @@
 
 Namespace Interfaces
     Public Interface IAddressRepository
+        Inherits IRepository(Of Address)
 
-        Function GetAddressByID(ByVal id As Integer) As Address
         Function GettAddressFromContext(ByVal id As Integer) As Address
 
     End Interface

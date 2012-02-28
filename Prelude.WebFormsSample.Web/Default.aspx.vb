@@ -8,7 +8,10 @@ Public Class _Default
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
         ' get an object from DB every time
-        Dim address123 As Address = IoC.Resolve(Of IRepository(Of Address)).GetByID(Of Integer)(123)
+        'Dim address123 As Address = IoC.Resolve(Of IRepository(Of Address)).GetByID(Of Integer)(123)
+
+        Dim address123 As Address = IoC.Resolve(Of IAddressRepository).GetByID(123)
+
 
         lblAddress.Text = address123.AddressLine1 & "<BR/>" & address123.City & ", " & address123.StateProvince.StateProvinceCode & " " & address123.PostalCode
 
