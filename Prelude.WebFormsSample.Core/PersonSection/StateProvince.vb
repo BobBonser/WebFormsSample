@@ -27,11 +27,13 @@ Namespace PersonSection
     
         Public Overridable Property Address As ICollection(Of Address) = New HashSet(Of Address)
         Public Overridable Property CountryRegion As CountryRegion
+    
             Public ReadOnly Property ID As Object Implements Interfaces.IEntity.ID
                 Get
                     Return StateProvinceID
                 End Get
             End Property
+    
     
     End Class
 

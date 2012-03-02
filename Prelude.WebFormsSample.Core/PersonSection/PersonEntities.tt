@@ -40,8 +40,13 @@ Partial <#=Accessibility.ForType(entity)#> <#=code.SpaceAfter(code.MustInheritOp
 	Implements IEntity
 <#
     Dim primitiveProperties as IEnumerable(Of EdmProperty) = entity.Properties.Where(Function(p) TypeOf p.TypeUsage.EdmType Is PrimitiveType AndAlso p.DeclaringType Is entity)
-    If primitiveProperties.Any() Then
+	Dim primaryKey as String = ""
+    
+	If primitiveProperties.Any() Then
         For Each edmProperty As EdmProperty In primitiveProperties
+			If ef.IsKey(edmProperty) Then 
+				primaryKey = edmProperty.Name 
+			End If
             WriteProperty(code, edmProperty)
         Next
     End If
@@ -66,14 +71,15 @@ Partial <#=Accessibility.ForType(entity)#> <#=code.SpaceAfter(code.MustInheritOp
         Next
     End If
 
-#>
-<#If primitiveProperties.Any() Then#>
+If primaryKey <> "" Then #>
+
         Public ReadOnly Property ID As Object Implements Interfaces.IEntity.ID
             Get
-                Return <#=code.Escape(primitiveProperties(0))#>
+                Return <#=code.Escape(primaryKey)#>
             End Get
         End Property
-<#End If#>
+
+<# End If #>
 
 End Class
 <#

@@ -11,31 +11,38 @@ Imports System
 Imports System.Data.Entity
 Imports System.Data.Entity.Infrastructure
 Imports Prelude.WebFormsSample.Core.PersonSection
+Imports System.Data.Objects
 
 Namespace PersonSection
 
     Partial Public Class PersonEntities
         Inherits DbContext
         Implements IPersonEntities
-    
+
         Public Sub New()
             MyBase.New("name=PersonEntities")
         End Sub
-    
+
         Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
-    	    Throw New UnintentionalCodeFirstException()
+            Throw New UnintentionalCodeFirstException()
         End Sub
-    
+
+        Public ReadOnly Property ObjectContext() As ObjectContext Implements IPersonEntities.ObjectContext
+            Get
+                Return (CType(Me, IObjectContextAdapter)).ObjectContext
+            End Get
+        End Property
+
         Public ReadOnly Property Context As DbContext Implements IPersonEntities.Context
             Get
                 Return Me
             End Get
         End Property
-    
+
         Public Property Address() As DbSet(Of Address) Implements IPersonEntities.Address
         Public Property CountryRegion() As DbSet(Of CountryRegion) Implements IPersonEntities.CountryRegion
         Public Property StateProvince() As DbSet(Of StateProvince) Implements IPersonEntities.StateProvince
-    
+
     End Class
 
 End Namespace

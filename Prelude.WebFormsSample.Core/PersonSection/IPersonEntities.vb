@@ -10,12 +10,14 @@
 Imports System
 Imports System.Data.Entity
 Imports System.Data.Entity.Infrastructure
+Imports System.Data.Objects
 
 Namespace PersonSection
 
     Public Interface IPersonEntities
-    
+
         ReadOnly Property Context As DbContext
+        ReadOnly Property ObjectContext() As ObjectContext
         Property Address() As DbSet(Of Address)
         Property CountryRegion() As DbSet(Of CountryRegion)
         Property StateProvince() As DbSet(Of StateProvince)

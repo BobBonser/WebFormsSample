@@ -114,6 +114,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="PersonSection\PrimaryKeyAttribute.vb" />
     <Compile Include="PersonSection\StateProvince.vb">
       <DependentUpon>PersonEntities.tt</DependentUpon>
     </Compile>
